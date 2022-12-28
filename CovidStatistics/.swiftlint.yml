@@ -1,0 +1,7 @@
+excluded:
+- generated/R.generated.swift
+- CovidStatistics/MockResults.swift
+- CSView/MockResults.swift
+- CSViewModel/MockResults.swift
+- CSModel/MockResults.swift
+- CSAPIServer/MockResults.swift
