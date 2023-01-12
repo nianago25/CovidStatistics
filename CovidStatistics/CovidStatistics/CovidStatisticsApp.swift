@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import CSView
+import CSViewModel
 
 @main
 struct CovidStatisticsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(viewModel: MainViewModel())
         }
     }
 }

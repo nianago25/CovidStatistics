@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C120A1A2970594D005C47C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C120A192970594D005C47C2 /* Localizable.strings */; };
+		3C120A2729705D10005C47C2 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C120A2629705D10005C47C2 /* Localized.swift */; };
 		3C181C7A295C98A60010F0C8 /* CovidStatisticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181C79295C98A60010F0C8 /* CovidStatisticsApp.swift */; };
-		3C181C7C295C98A60010F0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181C7B295C98A60010F0C8 /* ContentView.swift */; };
 		3C181C7E295C98A70010F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C181C7D295C98A70010F0C8 /* Assets.xcassets */; };
 		3C181C81295C98A70010F0C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C181C80295C98A70010F0C8 /* Preview Assets.xcassets */; };
 		3C181C8B295C98A70010F0C8 /* CovidStatisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181C8A295C98A70010F0C8 /* CovidStatisticsTests.swift */; };
@@ -34,7 +35,17 @@
 		3C181D19295C9B120010F0C8 /* CSAPIServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C181D0B295C9B120010F0C8 /* CSAPIServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C181D1C295C9B120010F0C8 /* CSAPIServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */; };
 		3C181D1D295C9B120010F0C8 /* CSAPIServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3C181D28295C9C7D0010F0C8 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 3C181D27295C9C7D0010F0C8 /* RswiftLibrary */; };
+		3C181D36295EB6440010F0C8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D35295EB6440010F0C8 /* MainView.swift */; };
+		3C181D3A295EB6600010F0C8 /* TotalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D39295EB6600010F0C8 /* TotalDataView.swift */; };
+		3C181D3D295EBBC70010F0C8 /* DataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D3C295EBBC70010F0C8 /* DataCardView.swift */; };
+		3C181D43295ED9D90010F0C8 /* APIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D42295ED9D90010F0C8 /* APIServer.swift */; };
+		3C181D46295EE3180010F0C8 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D45295EE3180010F0C8 /* CustomError.swift */; };
+		3C181D48295EE5ED0010F0C8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D47295EE5ED0010F0C8 /* MainViewModel.swift */; };
+		3C181D4A295EE8720010F0C8 /* CSAPIServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */; };
+		3C181D4B295EE8720010F0C8 /* CSModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CE9295C9B030010F0C8 /* CSModel.framework */; };
+		3C181D4C295EE8780010F0C8 /* CSViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CC9295C9AF80010F0C8 /* CSViewModel.framework */; };
+		3C181D4F295EE8AE0010F0C8 /* TotalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D4E295EE8AE0010F0C8 /* TotalDataModel.swift */; };
+		3C181D552967045A0010F0C8 /* TotalDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D542967045A0010F0C8 /* TotalDataEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,9 +167,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C120A192970594D005C47C2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3C120A2629705D10005C47C2 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		3C181C76295C98A60010F0C8 /* CovidStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C181C79295C98A60010F0C8 /* CovidStatisticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatisticsApp.swift; sourceTree = "<group>"; };
-		3C181C7B295C98A60010F0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C181C7D295C98A70010F0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C181C80295C98A70010F0C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C181C86295C98A70010F0C8 /* CovidStatisticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidStatisticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +194,14 @@
 		3C181D0B295C9B120010F0C8 /* CSAPIServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAPIServer.h; sourceTree = "<group>"; };
 		3C181D10295C9B120010F0C8 /* CSAPIServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSAPIServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C181D17295C9B120010F0C8 /* CSAPIServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAPIServerTests.swift; sourceTree = "<group>"; };
+		3C181D35295EB6440010F0C8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3C181D39295EB6600010F0C8 /* TotalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataView.swift; sourceTree = "<group>"; };
+		3C181D3C295EBBC70010F0C8 /* DataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCardView.swift; sourceTree = "<group>"; };
+		3C181D42295ED9D90010F0C8 /* APIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServer.swift; sourceTree = "<group>"; };
+		3C181D45295EE3180010F0C8 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		3C181D47295EE5ED0010F0C8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3C181D4E295EE8AE0010F0C8 /* TotalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataModel.swift; sourceTree = "<group>"; };
+		3C181D542967045A0010F0C8 /* TotalDataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +209,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C181D28295C9C7D0010F0C8 /* RswiftLibrary in Frameworks */,
 				3C181D1C295C9B120010F0C8 /* CSAPIServer.framework in Frameworks */,
 				3C181CBB295C9AEB0010F0C8 /* CSView.framework in Frameworks */,
 				3C181CFC295C9B040010F0C8 /* CSModel.framework in Frameworks */,
@@ -215,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C181D4C295EE8780010F0C8 /* CSViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +250,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C181D4A295EE8720010F0C8 /* CSAPIServer.framework in Frameworks */,
+				3C181D4B295EE8720010F0C8 /* CSModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +296,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C120A0E297054EB005C47C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C120A1B29705A5E005C47C2 /* Generated */,
+				3C120A192970594D005C47C2 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C120A1B29705A5E005C47C2 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				3C120A2629705D10005C47C2 /* Localized.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		3C181C6D295C98A60010F0C8 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +328,7 @@
 				3C181CF6295C9B040010F0C8 /* CSModelTests */,
 				3C181D16295C9B120010F0C8 /* CSAPIServerTests */,
 				3C181C77295C98A60010F0C8 /* Products */,
+				3C181D49295EE8720010F0C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -314,7 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				3C181C79295C98A60010F0C8 /* CovidStatisticsApp.swift */,
-				3C181C7B295C98A60010F0C8 /* ContentView.swift */,
 				3C181C7D295C98A70010F0C8 /* Assets.xcassets */,
 				3C181C7F295C98A70010F0C8 /* Preview Content */,
 			);
@@ -349,6 +388,9 @@
 		3C181CA9295C9AEB0010F0C8 /* CSView */ = {
 			isa = PBXGroup;
 			children = (
+				3C181D35295EB6440010F0C8 /* MainView.swift */,
+				3C181D39295EB6600010F0C8 /* TotalDataView.swift */,
+				3C181D3C295EBBC70010F0C8 /* DataCardView.swift */,
 				3C181CAA295C9AEB0010F0C8 /* CSView.h */,
 			);
 			path = CSView;
@@ -365,6 +407,7 @@
 		3C181CCA295C9AF80010F0C8 /* CSViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3C181D47295EE5ED0010F0C8 /* MainViewModel.swift */,
 				3C181CCB295C9AF80010F0C8 /* CSViewModel.h */,
 			);
 			path = CSViewModel;
@@ -381,6 +424,7 @@
 		3C181CEA295C9B030010F0C8 /* CSModel */ = {
 			isa = PBXGroup;
 			children = (
+				3C181D4E295EE8AE0010F0C8 /* TotalDataModel.swift */,
 				3C181CEB295C9B030010F0C8 /* CSModel.h */,
 			);
 			path = CSModel;
@@ -397,6 +441,10 @@
 		3C181D0A295C9B120010F0C8 /* CSAPIServer */ = {
 			isa = PBXGroup;
 			children = (
+				3C181D42295ED9D90010F0C8 /* APIServer.swift */,
+				3C181D542967045A0010F0C8 /* TotalDataEntity.swift */,
+				3C181D45295EE3180010F0C8 /* CustomError.swift */,
+				3C120A0E297054EB005C47C2 /* Resources */,
 				3C181D0B295C9B120010F0C8 /* CSAPIServer.h */,
 			);
 			path = CSAPIServer;
@@ -408,6 +456,13 @@
 				3C181D17295C9B120010F0C8 /* CSAPIServerTests.swift */,
 			);
 			path = CSAPIServerTests;
+			sourceTree = "<group>";
+		};
+		3C181D49295EE8720010F0C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,7 +509,6 @@
 			buildPhases = (
 				3C181D24295C9B4C0010F0C8 /* Run Script (SwiftLint) */,
 				3C181D25295C9C370010F0C8 /* Run Script (Mockolo) */,
-				3C181D2B295C9C9E0010F0C8 /* Run Script (R.Swift) */,
 				3C181C72295C98A60010F0C8 /* Sources */,
 				3C181C73295C98A60010F0C8 /* Frameworks */,
 				3C181C74295C98A60010F0C8 /* Resources */,
@@ -463,7 +517,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3C181D2A295C9C880010F0C8 /* PBXTargetDependency */,
 				3C181CBA295C9AEB0010F0C8 /* PBXTargetDependency */,
 				3C181CDB295C9AF80010F0C8 /* PBXTargetDependency */,
 				3C181CFB295C9B040010F0C8 /* PBXTargetDependency */,
@@ -471,7 +524,6 @@
 			);
 			name = CovidStatistics;
 			packageProductDependencies = (
-				3C181D27295C9C7D0010F0C8 /* RswiftLibrary */,
 			);
 			productName = CovidStatistics;
 			productReference = 3C181C76295C98A60010F0C8 /* CovidStatistics.app */;
@@ -633,6 +685,7 @@
 			buildPhases = (
 				3C181D04295C9B120010F0C8 /* Headers */,
 				3C181D30295C9E080010F0C8 /* Run Script (Mockolo) */,
+				3C120A0D297052C0005C47C2 /* Run Script (SwiftGen) */,
 				3C181D05295C9B120010F0C8 /* Sources */,
 				3C181D06295C9B120010F0C8 /* Frameworks */,
 				3C181D07295C9B120010F0C8 /* Resources */,
@@ -642,6 +695,8 @@
 			dependencies = (
 			);
 			name = CSAPIServer;
+			packageProductDependencies = (
+			);
 			productName = CSAPIServer;
 			productReference = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */;
 			productType = "com.apple.product-type.framework";
@@ -688,6 +743,7 @@
 					};
 					3C181CA7295C9AEB0010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					3C181CAE295C9AEB0010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
@@ -695,6 +751,7 @@
 					};
 					3C181CC8295C9AF80010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					3C181CCF295C9AF80010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
@@ -702,6 +759,7 @@
 					};
 					3C181CE8295C9B030010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					3C181CEF295C9B030010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
@@ -709,6 +767,7 @@
 					};
 					3C181D08295C9B120010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					3C181D0F295C9B120010F0C8 = {
 						CreatedOnToolsVersion = 14.2;
@@ -723,10 +782,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 3C181C6D295C98A60010F0C8;
 			packageReferences = (
-				3C181D26295C9C7D0010F0C8 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			productRefGroup = 3C181C77295C98A60010F0C8 /* Products */;
 			projectDirPath = "";
@@ -817,6 +876,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C120A1A2970594D005C47C2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +890,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C120A0D297052C0005C47C2 /* Run Script (SwiftGen) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (SwiftGen)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which /opt/homebrew/bin/mint > /dev/null; then\n    # SwiftGen\n    /opt/homebrew/bin/mint run swiftgen\nelse \n    echo 'warning: mint not installed.'\nfi\n";
+		};
 		3C181D24295C9B4C0010F0C8 /* Run Script (SwiftLint) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -866,26 +944,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which /opt/homebrew/bin/mint > /dev/null; then\n  rm -f $SRCROOT/CovidStatistics/MockResults.swift\n  /opt/homebrew/bin/mint run mockolo mockolo --sourcedirs $SRCROOT/CovidStatistics --destination $SRCROOT/CovidStatistics/MockResults.swift\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
-		};
-		3C181D2B295C9C9E0010F0C8 /* Run Script (R.Swift) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			name = "Run Script (R.Swift)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/generated/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which /opt/homebrew/bin/rswift >/dev/null; then\n/opt/homebrew/bin/rswift generate --access-level public \"$SRCROOT/generated/R.generated.swift\" \nelse\necho \"warning: R.swift not installed\"\nfi\n";
 		};
 		3C181D2D295C9D7C0010F0C8 /* Run Script (Mockolo) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -970,7 +1028,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C181C7C295C98A60010F0C8 /* ContentView.swift in Sources */,
 				3C181C7A295C98A60010F0C8 /* CovidStatisticsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -996,6 +1053,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C181D36295EB6440010F0C8 /* MainView.swift in Sources */,
+				3C181D3A295EB6600010F0C8 /* TotalDataView.swift in Sources */,
+				3C181D3D295EBBC70010F0C8 /* DataCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,6 +1071,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C181D48295EE5ED0010F0C8 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,6 +1087,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C181D4F295EE8AE0010F0C8 /* TotalDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,6 +1103,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C181D43295ED9D90010F0C8 /* APIServer.swift in Sources */,
+				3C120A2729705D10005C47C2 /* Localized.swift in Sources */,
+				3C181D552967045A0010F0C8 /* TotalDataEntity.swift in Sources */,
+				3C181D46295EE3180010F0C8 /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,10 +1190,6 @@
 			isa = PBXTargetDependency;
 			target = 3C181D08295C9B120010F0C8 /* CSAPIServer */;
 			targetProxy = 3C181D1A295C9B120010F0C8 /* PBXContainerItemProxy */;
-		};
-		3C181D2A295C9C880010F0C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 3C181D29295C9C880010F0C8 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1249,6 +1311,7 @@
 		3C181C9B295C98A70010F0C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1278,6 +1341,7 @@
 		3C181C9C295C98A70010F0C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1383,6 +1447,7 @@
 		3C181CBE295C9AEB0010F0C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1403,6 +1468,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1413,6 +1479,7 @@
 		3C181CBF295C9AEB0010F0C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1479,6 +1546,7 @@
 		3C181CDF295C9AF80010F0C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1499,6 +1567,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1509,6 +1578,7 @@
 		3C181CE0295C9AF80010F0C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1575,6 +1645,7 @@
 		3C181CFF295C9B040010F0C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1595,6 +1666,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1605,6 +1677,7 @@
 		3C181D00295C9B040010F0C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1671,6 +1744,7 @@
 		3C181D1F295C9B120010F0C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1691,6 +1765,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1701,6 +1776,7 @@
 		3C181D20295C9B120010F0C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1876,29 +1952,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3C181D26295C9C7D0010F0C8 /* XCRemoteSwiftPackageReference "R" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mac-cain13/R.swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3C181D27295C9C7D0010F0C8 /* RswiftLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C181D26295C9C7D0010F0C8 /* XCRemoteSwiftPackageReference "R" */;
-			productName = RswiftLibrary;
-		};
-		3C181D29295C9C880010F0C8 /* RswiftGenerateInternalResources */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "plugin:RswiftGenerateInternalResources";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C181C6E295C98A60010F0C8 /* Project object */;
 }
