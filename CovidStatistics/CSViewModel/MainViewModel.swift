@@ -9,6 +9,7 @@ import Foundation
 import CSModel
 import CSAPIServer
 
+/// @mockable
 public protocol MainViewModelProtocol: ObservableObject {
     var totalData: TotalDataModel { get }
     func setTotalData() async
@@ -17,9 +18,11 @@ public protocol MainViewModelProtocol: ObservableObject {
 public class MainViewModel: MainViewModelProtocol {
 
     @Published public var totalData: TotalDataModel = TotalDataModel()
-    var apiService: APIServiceProtocol = APIService.shared
+    var apiService: APIServiceProtocol
 
-    public init() {}
+    public init(apiService: APIServiceProtocol) {
+        self.apiService = apiService
+    }
 
     @MainActor
     public func setTotalData() async {
@@ -29,7 +32,7 @@ public class MainViewModel: MainViewModelProtocol {
 
     func fetchTotalData() async -> TotalDataModel? {
         do {
-            let response = try await apiService.fetchTotalData()
+            let response = try await self.apiService.fetchTotalData()
             return TotalDataModel(confirmed: response.data.confirmed,
                                   deaths: response.data.deaths,
                                   confirmed_diff: response.data.confirmed_diff,

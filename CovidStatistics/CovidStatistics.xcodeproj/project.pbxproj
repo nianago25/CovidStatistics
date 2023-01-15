@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3C120A1A2970594D005C47C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C120A192970594D005C47C2 /* Localizable.strings */; };
 		3C120A2729705D10005C47C2 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C120A2629705D10005C47C2 /* Localized.swift */; };
+		3C120A2B29743891005C47C2 /* MockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C120A2A29743891005C47C2 /* MockResults.swift */; };
+		3C120A2D29743B18005C47C2 /* MockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C120A2C29743B18005C47C2 /* MockResults.swift */; };
+		3C120A2E2974441D005C47C2 /* CSViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181CD7295C9AF80010F0C8 /* CSViewModelTests.swift */; };
+		3C120A2F2974441E005C47C2 /* CSViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181CD7295C9AF80010F0C8 /* CSViewModelTests.swift */; };
 		3C181C7A295C98A60010F0C8 /* CovidStatisticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181C79295C98A60010F0C8 /* CovidStatisticsApp.swift */; };
 		3C181C7E295C98A70010F0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C181C7D295C98A70010F0C8 /* Assets.xcassets */; };
 		3C181C81295C98A70010F0C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C181C80295C98A70010F0C8 /* Preview Assets.xcassets */; };
@@ -23,18 +27,12 @@
 		3C181CD1295C9AF80010F0C8 /* CSViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CC9295C9AF80010F0C8 /* CSViewModel.framework */; };
 		3C181CD8295C9AF80010F0C8 /* CSViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181CD7295C9AF80010F0C8 /* CSViewModelTests.swift */; };
 		3C181CD9295C9AF80010F0C8 /* CSViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C181CCB295C9AF80010F0C8 /* CSViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C181CDC295C9AF80010F0C8 /* CSViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CC9295C9AF80010F0C8 /* CSViewModel.framework */; };
-		3C181CDD295C9AF80010F0C8 /* CSViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CC9295C9AF80010F0C8 /* CSViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C181CF1295C9B030010F0C8 /* CSModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CE9295C9B030010F0C8 /* CSModel.framework */; };
 		3C181CF8295C9B040010F0C8 /* CSModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181CF7295C9B040010F0C8 /* CSModelTests.swift */; };
 		3C181CF9295C9B040010F0C8 /* CSModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C181CEB295C9B030010F0C8 /* CSModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C181CFC295C9B040010F0C8 /* CSModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CE9295C9B030010F0C8 /* CSModel.framework */; };
-		3C181CFD295C9B040010F0C8 /* CSModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181CE9295C9B030010F0C8 /* CSModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C181D11295C9B120010F0C8 /* CSAPIServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */; };
 		3C181D18295C9B120010F0C8 /* CSAPIServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D17295C9B120010F0C8 /* CSAPIServerTests.swift */; };
 		3C181D19295C9B120010F0C8 /* CSAPIServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C181D0B295C9B120010F0C8 /* CSAPIServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C181D1C295C9B120010F0C8 /* CSAPIServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */; };
-		3C181D1D295C9B120010F0C8 /* CSAPIServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C181D09295C9B120010F0C8 /* CSAPIServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C181D36295EB6440010F0C8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D35295EB6440010F0C8 /* MainView.swift */; };
 		3C181D3A295EB6600010F0C8 /* TotalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D39295EB6600010F0C8 /* TotalDataView.swift */; };
 		3C181D3D295EBBC70010F0C8 /* DataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C181D3C295EBBC70010F0C8 /* DataCardView.swift */; };
@@ -98,13 +96,6 @@
 			remoteGlobalIDString = 3C181C75295C98A60010F0C8;
 			remoteInfo = CovidStatistics;
 		};
-		3C181CDA295C9AF80010F0C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C181C6E295C98A60010F0C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C181CC8295C9AF80010F0C8;
-			remoteInfo = CSViewModel;
-		};
 		3C181CF2295C9B030010F0C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C181C6E295C98A60010F0C8 /* Project object */;
@@ -118,13 +109,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3C181C75295C98A60010F0C8;
 			remoteInfo = CovidStatistics;
-		};
-		3C181CFA295C9B040010F0C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C181C6E295C98A60010F0C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C181CE8295C9B030010F0C8;
-			remoteInfo = CSModel;
 		};
 		3C181D12295C9B120010F0C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -140,13 +124,6 @@
 			remoteGlobalIDString = 3C181C75295C98A60010F0C8;
 			remoteInfo = CovidStatistics;
 		};
-		3C181D1A295C9B120010F0C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C181C6E295C98A60010F0C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C181D08295C9B120010F0C8;
-			remoteInfo = CSAPIServer;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -156,10 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3C181D1D295C9B120010F0C8 /* CSAPIServer.framework in Embed Frameworks */,
 				3C181CBC295C9AEB0010F0C8 /* CSView.framework in Embed Frameworks */,
-				3C181CFD295C9B040010F0C8 /* CSModel.framework in Embed Frameworks */,
-				3C181CDD295C9AF80010F0C8 /* CSViewModel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +143,8 @@
 /* Begin PBXFileReference section */
 		3C120A192970594D005C47C2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3C120A2629705D10005C47C2 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		3C120A2A29743891005C47C2 /* MockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockResults.swift; sourceTree = "<group>"; };
+		3C120A2C29743B18005C47C2 /* MockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockResults.swift; sourceTree = "<group>"; };
 		3C181C76295C98A60010F0C8 /* CovidStatistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidStatistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C181C79295C98A60010F0C8 /* CovidStatisticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidStatisticsApp.swift; sourceTree = "<group>"; };
 		3C181C7D295C98A70010F0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,10 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C181D1C295C9B120010F0C8 /* CSAPIServer.framework in Frameworks */,
 				3C181CBB295C9AEB0010F0C8 /* CSView.framework in Frameworks */,
-				3C181CFC295C9B040010F0C8 /* CSModel.framework in Frameworks */,
-				3C181CDC295C9AF80010F0C8 /* CSViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				3C181D47295EE5ED0010F0C8 /* MainViewModel.swift */,
+				3C120A2C29743B18005C47C2 /* MockResults.swift */,
 				3C181CCB295C9AF80010F0C8 /* CSViewModel.h */,
 			);
 			path = CSViewModel;
@@ -444,6 +418,7 @@
 				3C181D42295ED9D90010F0C8 /* APIServer.swift */,
 				3C181D542967045A0010F0C8 /* TotalDataEntity.swift */,
 				3C181D45295EE3180010F0C8 /* CustomError.swift */,
+				3C120A2A29743891005C47C2 /* MockResults.swift */,
 				3C120A0E297054EB005C47C2 /* Resources */,
 				3C181D0B295C9B120010F0C8 /* CSAPIServer.h */,
 			);
@@ -518,9 +493,6 @@
 			);
 			dependencies = (
 				3C181CBA295C9AEB0010F0C8 /* PBXTargetDependency */,
-				3C181CDB295C9AF80010F0C8 /* PBXTargetDependency */,
-				3C181CFB295C9B040010F0C8 /* PBXTargetDependency */,
-				3C181D1B295C9B120010F0C8 /* PBXTargetDependency */,
 			);
 			name = CovidStatistics;
 			packageProductDependencies = (
@@ -1071,6 +1043,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C120A2D29743B18005C47C2 /* MockResults.swift in Sources */,
 				3C181D48295EE5ED0010F0C8 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1095,6 +1068,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C120A2F2974441E005C47C2 /* CSViewModelTests.swift in Sources */,
 				3C181CF8295C9B040010F0C8 /* CSModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1106,6 +1080,7 @@
 				3C181D43295ED9D90010F0C8 /* APIServer.swift in Sources */,
 				3C120A2729705D10005C47C2 /* Localized.swift in Sources */,
 				3C181D552967045A0010F0C8 /* TotalDataEntity.swift in Sources */,
+				3C120A2B29743891005C47C2 /* MockResults.swift in Sources */,
 				3C181D46295EE3180010F0C8 /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1114,6 +1089,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C120A2E2974441D005C47C2 /* CSViewModelTests.swift in Sources */,
 				3C181D18295C9B120010F0C8 /* CSAPIServerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1156,11 +1132,6 @@
 			target = 3C181C75295C98A60010F0C8 /* CovidStatistics */;
 			targetProxy = 3C181CD4295C9AF80010F0C8 /* PBXContainerItemProxy */;
 		};
-		3C181CDB295C9AF80010F0C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C181CC8295C9AF80010F0C8 /* CSViewModel */;
-			targetProxy = 3C181CDA295C9AF80010F0C8 /* PBXContainerItemProxy */;
-		};
 		3C181CF3295C9B030010F0C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C181CE8295C9B030010F0C8 /* CSModel */;
@@ -1171,11 +1142,6 @@
 			target = 3C181C75295C98A60010F0C8 /* CovidStatistics */;
 			targetProxy = 3C181CF4295C9B040010F0C8 /* PBXContainerItemProxy */;
 		};
-		3C181CFB295C9B040010F0C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C181CE8295C9B030010F0C8 /* CSModel */;
-			targetProxy = 3C181CFA295C9B040010F0C8 /* PBXContainerItemProxy */;
-		};
 		3C181D13295C9B120010F0C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C181D08295C9B120010F0C8 /* CSAPIServer */;
@@ -1185,11 +1151,6 @@
 			isa = PBXTargetDependency;
 			target = 3C181C75295C98A60010F0C8 /* CovidStatistics */;
 			targetProxy = 3C181D14295C9B120010F0C8 /* PBXContainerItemProxy */;
-		};
-		3C181D1B295C9B120010F0C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C181D08295C9B120010F0C8 /* CSAPIServer */;
-			targetProxy = 3C181D1A295C9B120010F0C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

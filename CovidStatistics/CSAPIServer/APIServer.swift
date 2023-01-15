@@ -7,13 +7,13 @@
 
 import Foundation
 
+/// @mockable
 public protocol APIServiceProtocol {
-    static var shared: Self { get }
     func fetchTotalData() async throws -> TotalDataEntity
 }
 
 final public class APIService: APIServiceProtocol {
-    public static var shared: APIService  = APIService()
+    public init() {}
 
     public func fetchTotalData() async throws -> TotalDataEntity {
         do {

@@ -8,12 +8,13 @@
 import SwiftUI
 import CSView
 import CSViewModel
+import CSAPIServer
 
 @main
 struct CovidStatisticsApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(viewModel: MainViewModel())
+            MainView(viewModel: MainViewModel(apiService: APIService()))
         }
     }
 }

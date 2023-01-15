@@ -7,30 +7,37 @@
 
 import XCTest
 @testable import CSViewModel
+@testable import CSModel
+@testable import CSAPIServer
 
 final class CSViewModelTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewModel = MainViewModel(apiService: APIService())
+    let apiServerMock = APIServiceProtocolMock()
+
+    override func setUpWithError() throws {}
+
+    override func tearDownWithError() throws {}
+
+    func test_totalData() throws {
+        XCTAssertEqual(viewModel.totalData.confirmed, TotalDataModel().confirmed)
+        XCTAssertEqual(viewModel.totalData.deaths, TotalDataModel().deaths)
+        XCTAssertEqual(viewModel.totalData.confirmed_diff, TotalDataModel().confirmed_diff)
+        XCTAssertEqual(viewModel.totalData.deaths_diff, TotalDataModel().deaths_diff)
+        XCTAssertEqual(viewModel.totalData.active, TotalDataModel().active)
+        XCTAssertEqual(viewModel.totalData.fatality_rate, TotalDataModel().fatality_rate)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_setTotalData() async throws {
+        apiServerMock.fetchTotalDataHandler = { TotalDataEntity(data: TotalData(confirmed: 0,
+                                                                                deaths: 0,
+                                                                                confirmed_diff: 0,
+                                                                                deaths_diff: 0,
+                                                                                active: 0,
+                                                                                fatality_rate: 0.0))}
+        viewModel = MainViewModel(apiService: apiServerMock)
+        await viewModel.setTotalData()
+        XCTAssertEqual(apiServerMock.fetchTotalDataCallCount, 1)
     }
 
 }
