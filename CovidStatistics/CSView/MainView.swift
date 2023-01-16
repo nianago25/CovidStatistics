@@ -33,6 +33,7 @@ public struct MainView<ViewModel: MainViewModelProtocol>: View {
                     .font(.title2.bold())
                     .foregroundColor(.primary)
                     .padding(10)
+                    .accessibilityIdentifier("世界の総数")
                 TotalDataView(confirmed: viewModel.totalData.confirmed,
                               confirmed_diff: viewModel.totalData.confirmed_diff,
                               deaths_diff: viewModel.totalData.deaths_diff,

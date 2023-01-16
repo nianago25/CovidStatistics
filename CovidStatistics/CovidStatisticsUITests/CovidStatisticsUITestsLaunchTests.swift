@@ -24,9 +24,13 @@ final class CovidStatisticsUITestsLaunchTests: XCTestCase {
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app
 
-        let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
-        add(attachment)
+//        let attachment = XCTAttachment(screenshot: app.screenshot())
+//        attachment.name = "Launch Screen"
+//        attachment.lifetime = .keepAlways
+//        add(attachment)
+        XCTAssertTrue(app.staticTexts["世界の総数"].exists)
+        XCTAssertTrue(app.staticTexts["総感染者数"].exists)
+        XCTAssertTrue(app.staticTexts["1日の感染者数"].exists)
+        XCTAssertTrue(app.staticTexts["死亡率"].exists)
     }
 }

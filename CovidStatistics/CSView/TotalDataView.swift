@@ -19,13 +19,17 @@ struct TotalDataView: View {
         VStack {
             HStack {
                 DataCardView(number: confirmed.formatNumber, name: "総感染者数", color: .accentColor)
+                    .accessibilityIdentifier("総感染者数")
                 DataCardView(number: confirmed_diff.formatNumber, name: "1日の感染者数", color: .accentColor)
+                    .accessibilityIdentifier("1日の感染者数")
             }
             HStack {
                 DataCardView(number: deaths_diff.formatNumber, name: "死亡数", color: .red)
+                    .accessibilityIdentifier("死亡数")
                 DataCardView(number: String(format: "%.2f", fatality_rate),
                              name: "死亡率 %",
                              color: .red)
+                .accessibilityIdentifier("死亡率")
             }
         }
         .frame(height: 170)
